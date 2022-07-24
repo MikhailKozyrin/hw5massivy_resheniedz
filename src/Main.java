@@ -19,16 +19,45 @@ public class Main {
         int year4 = numbers3[3];
         int year5 = numbers3[4];
 
-        System.out.println(numbers1[0] + ", " + numbers1[1] + ", " + numbers1[2] + ";");
-        System.out.println(num1 + ", " + num2 + ", " + num3 + ";");
-        System.out.println(year1 + ", " + year2 + ", " + year3 + ", " + year4 + ", " + year5);
+
+        System.out.println(numbers1[0] + ", " + numbers1[1] + ", " + numbers1[2]);
+
+        for (int i = 0; i < numbers2.length; i++) {
+            if (i == numbers2.length - 1) {
+                System.out.println(numbers2[i]);
+            } else {
+                System.out.print(numbers2[i] + ", ");
+            }
+        }
+
+        for (int i = 0; i < numbers3.length - 1; i++) {
+            System.out.print(numbers3[i] + ", ");
+        }
+        System.out.println(numbers3[numbers3.length - 1]);
+
 
         System.out.println();
 
         // TASK 3
-        System.out.println(numbers1[2] + ", " + numbers1[1] + ", " + numbers1[0] + ";");
-        System.out.println(num3 + ", " + num2 + ", " + num1 + ";");
-        System.out.println(year5 + ", " + year4 + ", " + year3 + ", " + year2 + ", " + year1);
+        System.out.println(numbers1[2] + ", " + numbers1[1] + ", " + numbers1[0]);
+
+
+        int a = numbers2.length - 1;
+        while (a > 0) {
+            System.out.print(numbers2[a] + ", ");
+            a--;
+        }
+        System.out.println(numbers3[0]);
+
+
+
+        int b = numbers3.length - 1;
+        while (b > 0) {
+            System.out.print(numbers3[b] + ", ");
+            b--;
+        }
+        System.out.println(numbers3[0]);
+
 
         System.out.println();
 
